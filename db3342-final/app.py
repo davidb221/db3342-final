@@ -15,6 +15,12 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return render_template('index.html')
+@app.route("/classes")
+def hi():
+    return render_template('classes.html')
+@app.route("/")
+def hey():
+    return render_template('1006.html')
 #start the server
 if __name__ == "__main__":
     app.run()
