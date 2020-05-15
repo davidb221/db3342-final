@@ -18,9 +18,9 @@ def hello():
 @app.route("/classes")
 def hi():
     return render_template('classes.html')
-@app.route("/")
+@app.route("/interest")
 def hey():
-    return render_template('1006.html')
+    return render_template('interest.html')
 #start the server
 if __name__ == "__main__":
     app.run()
